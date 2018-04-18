@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "struts-2.3.dtd" >
+<struts>
+	<constant name="struts.devMove" value="true"></constant>
+	<package name="p2" extends="json-default" namespace="/">
+		<action name="*" class="cn.com.action.UserAction" method="{1}">
+			<result name="success" type="json">/index.jsp</result>
+		</action>
+	</package>
+</struts>
